@@ -1,14 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technix – Heavy Machinery Engineering & Manufacturing</title>
-    <meta name="description" content="Technix – projektowanie i produkcja osprzętu do maszyn budowlanych, usługi obróbki skrawaniem, regeneracja układów hydraulicznych. Stalowa Wola." />
-  </head>
-  <body class="bg-slate-950 text-slate-100 antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHNIX – Osprzęt do Maszyn Budowlanych | Stalowa Wola</title>
+  <meta name="description" content="TECHNIX Woźniacki i Wspólnicy Sp.J. – Projektowanie i produkcja osprzętu do maszyn budowlanych, konstrukcji stalowych. Stalowa Wola." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== STICKY NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="spheroid_tight.png" alt="TECHNIX" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu nawigacji">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Start</a></li>
+          <li><a href="#about" class="nav-link">O firmie</a></li>
+          <li><a href="#offer" class="nav-link">Oferta</a></li>
+          <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Projektowanie i wykonawstwo <span class="text-accent">specjalistycznych osprzętów</span> do maszyn budowlanych</h1>
+      <p class="hero-subtitle">
+        Specjalizujemy się w projektowaniu i wykonawstwie specjalistycznych zespołów, części oraz osprzętów
+        do maszyn budowlanych – zarówno standardowych, jak i specjalizowanych.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Skontaktuj się z nami
+        </a>
+        <a href="#offer" class="btn btn-outline">
+          <i class="fas fa-cogs"></i> Zobacz ofertę
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O firmie</span>
+        <h2 class="section-title">Doświadczenie i precyzja <span class="text-accent">w każdym detalu</span></h2>
+        <p class="section-desc">
+          TECHNIX Woźniacki i Wspólnicy Sp.j. to firma specjalizująca się w projektowaniu i wykonawstwie
+          specjalistycznych zespołów, części oraz osprzętów do maszyn budowlanych.
+          Jesteśmy dostawcami specjalizowanych osprzętów i części do maszyn roboczych eksploatowanych
+          w cukrowniach, kopalniach odkrywkowych oraz w przemyśle wydobywczym.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Projektowanie</h3>
+          <p>Zaawansowane projekty 3D w systemie CAD – dostosowane do indywidualnych potrzeb klienta i specyfiki maszyn.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-industry"></i></div>
+          <h3>Produkcja własna</h3>
+          <p>Dysponujemy własnym parkiem maszynowym – od cięcia laserowego, przez gięcie, po spawanie i malowanie proszkowe.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-hard-hat"></i></div>
+          <h3>Trwałość i bezpieczeństwo</h3>
+          <p>Każdy produkt przechodzi rygorystyczne testy wytrzymałościowe. Stosujemy wyłącznie atestowane materiały.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Indywidualne podejście</h3>
+          <p>Każde zlecenie traktujemy indywidualnie – od konsultacji technicznej, przez projekt, aż po gotowy wyrób.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFER SECTION ===== -->
+  <section class="section section-dark" id="offer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Oferta</span>
+        <h2 class="section-title">Nasze <span class="text-accent">produkty i usługi</span></h2>
+        <p class="section-desc">
+          Specjalizujemy się w produkcji osprzętu do koparek, ładowarek i innych maszyn budowlanych,
+          a także w realizacji konstrukcji stalowych na zamówienie.
+        </p>
+      </div>
+      <div class="offer-tabs">
+        <button class="offer-tab active" data-tab="osprzet">
+          <i class="fas fa-tractor"></i> Osprzęt
+        </button>
+        <button class="offer-tab" data-tab="szybkozlacza">
+          <i class="fas fa-link"></i> Szybkozłącza
+        </button>
+        <button class="offer-tab" data-tab="uslugi">
+          <i class="fas fa-tools"></i> Usługi
+        </button>
+        <button class="offer-tab" data-tab="sygnaly">
+          <i class="fas fa-volume-up"></i> Sygnały cofania
+        </button>
+      </div>
+      <div class="offer-panels">
+        <!-- Tab 1: Osprzęt -->
+        <div class="offer-panel active" id="panel-osprzet">
+          <div class="offer-grid">
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-tractor"></i>
+              </div>
+              <h4>Łyżki do koparek i ładowarek</h4>
+              <p>Standardowe, skarpowe, do skał – wzmocnione, z wymiennymi zębami, blachy Hardox.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-tractor"></i>
+              </div>
+              <h4>Widły do palet i do skał</h4>
+              <p>Wytrzymałe widły do ładowarek i wózków – do prac przeładunkowych i kamieniołomach.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-arrows-alt"></i>
+              </div>
+              <h4>Lemiesze</h4>
+              <p>Lemiesze do spychania, do odśnieżania z hydraulicznym przechylem, do pryzmowania buraków.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-hand-rock"></i>
+              </div>
+              <h4>Chwytaki hydrauliczne</h4>
+              <p>Chwytaki do belot, do dłużyc, manipulatory płyt – precyzyjne i bezpieczne.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tab 2: Szybkozłącza -->
+        <div class="offer-panel" id="panel-szybkozlacza">
+          <div class="offer-grid">
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-link"></i>
+              </div>
+              <h4>Szybkozłącza hydrauliczne</h4>
+              <p>Umożliwiają szybką wymianę osprzętu bez opuszczania kabiny operatora.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-link"></i>
+              </div>
+              <h4>Adaptery i uchwyty</h4>
+              <p>Dedykowane mocowania pod konkretne modele maszyn – Volvo, Caterpillar, Komatsu, JCB i inne.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-link"></i>
+              </div>
+              <h4>Zaczepy do kontenerów</h4>
+              <p>Zaczepy do przesuwania kontenerów – wytrzymałe i niezawodne.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tab 3: Usługi -->
+        <div class="offer-panel" id="panel-uslugi">
+          <div class="offer-grid">
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Cięcie laserowe</h4>
+              <p>Usługa cięcia blach i profili stalowych na precyzyjnych maszynach CNC.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Gięcie i formowanie</h4>
+              <p>Gięcie blach na prasach krawędziowych z dużą dokładnością.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Spawanie i malowanie</h4>
+              <p>Profesjonalne spawanie metodą MAG/TIG oraz malowanie proszkowe i natryskowe.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-cog"></i>
+              </div>
+              <h4>Obróbka skrawaniem</h4>
+              <p>Toczenie, frezowanie, wiercenie, nacinanie wielowypustów i kół zębatych.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <h4>Remonty zespołów maszyn</h4>
+              <p>Naprawy i regeneracja zespołów maszyn budowlanych i przemysłowych.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-cubes"></i>
+              </div>
+              <h4>Wały i zębatki</h4>
+              <p>Produkcja wałów napędowych, wałów zębatych, listew zębatych i kół zębatych.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Tab 4: Sygnały cofania -->
+        <div class="offer-panel" id="panel-sygnaly">
+          <div class="offer-grid">
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <h4>Sygnały cofania</h4>
+              <p>Dźwiękowe sygnały ostrzegawcze do maszyn budowlanych i pojazdów przemysłowych.</p>
+            </div>
+            <div class="offer-item">
+              <div class="offer-img-placeholder">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <h4>Sygnały cofania z czujnikiem</h4>
+              <p>Sygnały wyposażone w czujnik obecności – zwiększają bezpieczeństwo pracy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontakt</span>
+        <h2 class="section-title">Skontaktuj się <span class="text-accent">z nami</span></h2>
+        <p class="section-desc">
+          Zapraszamy do kontaktu – odpowiemy na wszystkie pytania dotyczące naszej oferty.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-card-text">
+            <h4>Adres</h4>
+            <p>TECHNIX Woźniacki i Wspólnicy Sp.j.</p>
+            <p>ul. Grabskiego 41A<br />37-450 Stalowa Wola</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-card-text">
+            <h4>Telefon / Fax</h4>
+            <p><a href="tel:+48156420329">(0-15) 642-03-29</a></p>
+            <p><a href="tel:+48156420306">(0-15) 642-03-06</a></p>
+            <p><a href="tel:+48158425000">+48 15 842 50 00</a></p>
+            <p><a href="tel:+48158425001">+48 15 842 50 01</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-card-text">
+            <h4>E-mail</h4>
+            <p><a href="mailto:technix@technix.stalowa-wola.pl">technix@technix.stalowa-wola.pl</a></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-file-invoice"></i></div>
+          <div class="contact-card-text">
+            <h4>Dane rejestrowe</h4>
+            <p>NIP: 865-10-01-123<br />KRS: 0000123456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="spheroid_tight.png" alt="TECHNIX" class="footer-logo-img" />
+        <p>Woźniacki i Wspólnicy Sp.j.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Start</a>
+        <a href="#about">O firmie</a>
+        <a href="#offer">Oferta</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 TECHNIX Woźniacki i Wspólnicy Sp.j. Wszelkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Przewiń do góry">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
 </html>
